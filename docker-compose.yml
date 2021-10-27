@@ -1,0 +1,9 @@
+# version is now using "compose spec"
+# v2 and v3 are now combined!
+# docker-compose v1.27+ required
+
+services:
+  python:
+    image: python:2.7.18
+    volumes:
+      - ./:/opt/mywork
