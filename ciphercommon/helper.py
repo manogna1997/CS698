@@ -50,6 +50,7 @@ def run_cipher_logic(data, name):
         cipher_stats.append(en_chacha20_bytes(struct.pack('>f', data), name))
         cipher_stats.append(en_arc4_bytes(struct.pack('>f', data), name))
         cipher_stats.append(en_aes_bytes(struct.pack('>f', data), name))
+        # cipher_stats.append(en_aes_ctr_bytes(struct.pack('!f', data), name))
         # en_aes_ctr_bytes(data.to_bytes(5, 'little'),name)
 
     for stats in cipher_stats:
