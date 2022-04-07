@@ -1,9 +1,9 @@
 # version is now using "compose spec"
 # v2 and v3 are now combined!
 # docker-compose v1.27+ required
-
+#docker run -i -t -v  /Users/abhilash.keerthi/Desktop/my_work_space/manu_workspace/CSUSM/CS698:/opt/mywork python:3.9.12-slim /bin/sh
 services:
   python:
-    image: python:2.7.18
+    image: python:3.9.12-slim
     volumes:
       - ./:/opt/mywork

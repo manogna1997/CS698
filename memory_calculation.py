@@ -12,6 +12,11 @@ import sys
 import pandas as pd
 Threshold= 0.4;
 
+from pyJoules.energy_meter import measure_energy
+
+
+
+
 plaintext = b'be with failur you with failure success will follows'
 key= b't'
 
@@ -83,6 +88,7 @@ cipher = ChaCha20.new(key=secret.digest(), nonce=cipher.nonce)
 plainoutctext= cipher.decrypt(ciphertext)
 print(" Decrypted:\t",plainoutctext)
 
+@measure_energy
 def sal():
     byteData1 = plainoutstext
     s1= codecs.decode(byteData1, 'UTF-8')
